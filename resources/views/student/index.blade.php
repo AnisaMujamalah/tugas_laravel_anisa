@@ -1,5 +1,5 @@
-@extends('template.master')
+@extend('template.master')
 
-@section('content')
-    <h1>Ini halaman index</h1>
+@section ('content')
+<h1> ini halaman index</h1>
 @endsection

@@ -5,6 +5,7 @@ use App\Http\Controllers\AkunController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ToDoController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\KelasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -146,3 +147,4 @@ Route::get('/account/show', [AccountController::class, 'show']
 
 
 Route::resource('student', SiswaController::class);
+Route::resource('Class', KelasController::class);
