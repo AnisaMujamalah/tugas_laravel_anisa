@@ -5,7 +5,7 @@ use App\Http\Controllers\AkunController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ToDoController;
 use App\Http\Controllers\SiswaController;
-use App\Http\Controllers\KelasController;
+use App\Http\Controllers\kelasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -147,4 +147,10 @@ Route::get('/account/show', [AccountController::class, 'show']
 
 
 Route::resource('student', SiswaController::class);
-Route::resource('Class', KelasController::class);
+Route::resource('class', kelasController::class);
+
+Route::get('/student', [SiswaController::class, 'index'])->name('indexStudent');
+Route::get('/student/create', [SiswaController::class, 'create'])->name('studentCreate');
+
+Route::get('/class', [kelasController::class, 'index'])->name('indexClass');
+Route::get('/class/create', [kelasController::class, 'create'])->name('classCreate');

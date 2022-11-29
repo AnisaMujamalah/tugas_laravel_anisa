@@ -13,7 +13,6 @@ class AkunController extends Controller
     }
     public function create()
     {
-        return view('create');
-    }
-
+        return view('create');    
+    }  
 }
